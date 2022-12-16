@@ -28,7 +28,7 @@
     color: gray;
 }
 
-.navContainer .menu li:first-child a {
+.navContainer .menu li:nth-child(2) a {
     color: gray;
 }
 
@@ -38,12 +38,12 @@
     height: 5px;
     width: 50%;
     bottom: 0%;
-    left:0;
+    left:50%;
     transition: all 0.3s ease
 }
 
-.navContainer .menu li:nth-child(2):hover ~ .line{
-    left: 50%;
+.navContainer .menu li:first-child:hover ~ .line{
+    left: 0;
 }
 
 .jumbotron {
@@ -57,7 +57,7 @@ span {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-.jumbotron h2 a {
+.jumbotron p a {
     color: white;
 }
 
@@ -68,79 +68,18 @@ span {
 
 .jumbotron h2 {
     text-align: center;
-    font-size: 25px;
 }
 
-.cardsect {
-    max-width: 1200px;
-    margin: 0 auto;
+.faq-zone {
+    padding: 25px;
 }
 
-.cardsect h1{
-    font-size: 30px;
-    font-weight: 400;
-    text-align: center;
+.credits {
+    padding: 25px;
 }
 
-.cardlist {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.cardelement {
-    display: flex;
-    padding: 16px;
-}
-
-@media (min-width: 100px) {
-    .cardelement{
-        width: 100%;
-    }
-}
-
-@media (min-width: 650px) {
-    .cardelement{
-        width: 50%;
-    }
-}
-
-@media (min-width: 1000px) {
-    .cardelement{
-        width: 33%;
-    }
-}
-
-.cardelement .card {
-    display: flex;
-    box-shadow: 0 20px  40px rgba(0,0,0,0.25);
-}
-
-.cardsect img{
-    max-width: 100%;
-    height: 100%;
-}
-
-.cardsect .btn{
-    padding: 14px;
-    font-size: 14px;
-    text-transform: uppercase;
-    width: 100%;
-    font-weight: 500;
-    border: 1px solid grey;
-}
-
-.cardcontent{
-    padding: 16px;
-    background: blue;
-}
-
-.cardtext {
-    font-size: 14px;
-    margin-bottom: 18px;
-    font-weight: 400;
+.faq-item {
+    padding: 10px;
 }
 
 footer{
